@@ -36,6 +36,53 @@
                 </ul>
             </div>
         </section>
+        <section class="prefsgroup">
+            <form id="signup" action="/api/subscribe" method="post">
+                <label for="name">Nome</label>
+                <input id="name" name="name" type="text" required maxlength="80" autocomplete="name">
+
+                <label for="email">E-mail</label>
+                <input id="email" name="email" type="email" required maxlength="254" autocomplete="email">
+
+                <label for="role">Cargo Desejad</label>
+                <input id="role" name="role" type="text" required maxlength="80">
+
+                <fieldset>
+                    <legend>Senioridade</legend>
+                    <label>
+                        <input type="radio" name="seniority" value="intern" class="peer sr-only" required>
+                        <span class="inline-flex h-11 cursor-pointer items-center rounded-full border border-stone-300 bg-white px-4
+                                           peer-checked:border-green-700 peer-checked:bg-green-700 peer-checked:text-white
+                                           peer-focus-visible:ring-2 peer-focus-visible:ring-offset-2">Estágio</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="seniority" value="junior" class="peer sr-only" required>
+                        <span class="inline-flex h-11 cursor-pointer items-center rounded-full border border-stone-300 bg-white px-4
+                                           peer-checked:border-green-700 peer-checked:bg-green-700 peer-checked:text-white
+                                           peer-focus-visible:ring-2 peer-focus-visible:ring-offset-2">Júnior</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="seniority" value="pleno" class="peer sr-only" required>
+                        <span class="inline-flex h-11 cursor-pointer items-center rounded-full border border-stone-300 bg-white px-4
+                                           peer-checked:border-green-700 peer-checked:bg-green-700 peer-checked:text-white
+                                           peer-focus-visible:ring-2 peer-focus-visible:ring-offset-2">Pleno</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="seniority" value="senior" class="peer sr-only" required>
+                        <span class="inline-flex h-11 cursor-pointer items-center rounded-full border border-stone-300 bg-white px-4
+                                           peer-checked:border-green-700 peer-checked:bg-green-700 peer-checked:text-white
+                                           peer-focus-visible:ring-2 peer-focus-visible:ring-offset-2">Senior</span>
+                    </label>
+                </fieldset>
+
+                <fieldset id="skills">
+                    <legend>Habilidades <span id="skills-count">0 de 15</span></legend>
+                    <label>
+                        <input type="checkbox">
+                    </label>
+                </fieldset>
+            </form>
+        </section>
     </main>
   </body>
 </html>
