@@ -78,9 +78,81 @@
                 <fieldset id="skills">
                     <legend>Habilidades <span id="skills-count">0 de 15</span></legend>
                     <label>
-                        <input type="checkbox">
+                        <input type="checkbox" name="skills" value="go" class="peer sr-only">
+                        <span class="inline-flex h-11 cursor-pointer items-center rounded-full border border-stone-300 bg-white px-4
+                                           peer-checked:border-green-700 peer-checked:bg-green-700 peer-checked:text-white
+                                           peer-focus-visible:ring-2 peer-focus-visible:ring-offset-2">Go</span>
+                    </label>
+                    <label>
+                        <input type="checkbox" name="skills" value="go" class="peer sr-only">
+                        <span class="inline-flex h-11 cursor-pointer items-center rounded-full border border-stone-300 bg-white px-4
+                                           peer-checked:border-green-700 peer-checked:bg-green-700 peer-checked:text-white
+                                           peer-focus-visible:ring-2 peer-focus-visible:ring-offset-2">PostgreSQL</span>
+                    </label>
+                    <label>
+                        <input type="checkbox" name="skills" value="go" class="peer sr-only">
+                        <span class="inline-flex h-11 cursor-pointer items-center rounded-full border border-stone-300 bg-white px-4
+                                           peer-checked:border-green-700 peer-checked:bg-green-700 peer-checked:text-white
+                                           peer-focus-visible:ring-2 peer-focus-visible:ring-offset-2">Docker</span>
+                    </label>
+                    <label>
+                        <input type="checkbox" name="skills" value="go" class="peer sr-only">
+                        <span class="inline-flex h-11 cursor-pointer items-center rounded-full border border-stone-300 bg-white px-4
+                                           peer-checked:border-green-700 peer-checked:bg-green-700 peer-checked:text-white
+                                           peer-focus-visible:ring-2 peer-focus-visible:ring-offset-2">Git</span>
+                    </label>
+                    <label>
+                        <input type="checkbox" name="skills" value="go" class="peer sr-only">
+                        <span class="inline-flex h-11 cursor-pointer items-center rounded-full border border-stone-300 bg-white px-4
+                                           peer-checked:border-green-700 peer-checked:bg-green-700 peer-checked:text-white
+                                           peer-focus-visible:ring-2 peer-focus-visible:ring-offset-2">Zabbix</span>
                     </label>
                 </fieldset>
+                <label for="state">Localidade</label>
+                <select name="state" id="state" required>
+                    <option value="" dsisable selected>Selecione</option>
+                    <option value="NE">Todo o Nordeste</option>
+                    <option value="CE">Ceará</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="PA">Paraíba</option>
+                    <option value="PB">Pernambuco</option>
+                    <option value="AL">Alagoas</option>
+                    <option value="SE">Sergipe</option>
+                    <option value="BA">Bahia</option>
+                    <option value="PI">Piauí</option>
+                    <option value="MA">Maranhão</option>
+                </select>
+
+                <label for="freq">Frequeência <span>(Envio dos e-mails)</span></label>
+                <select name="frequency" id="freq">
+                    <option value="weekly">Semanal</option>
+                    <option value="daily">Diária</option>
+                </select>
+
+                <fieldset>
+                    <legend>Modelo de Trabalho</legend>
+                    <label><input type="checkbox" name="mode" value="presencial" class="peer sr-only"><span class="inline-flex h-11 cursor-pointer items-center rounded-full border border-stone-300 bg-white px-4
+                                       peer-checked:border-green-700 peer-checked:bg-green-700 peer-checked:text-white
+                                       peer-focus-visible:ring-2 peer-focus-visible:ring-offset-2">Presencial</span></label>
+                    <label><input type="checkbox" name="mode" value="hibrido" class="peer sr-only"><span class="inline-flex h-11 cursor-pointer items-center rounded-full border border-stone-300 bg-white px-4
+                                       peer-checked:border-green-700 peer-checked:bg-green-700 peer-checked:text-white
+                                       peer-focus-visible:ring-2 peer-focus-visible:ring-offset-2">Híbrido</span></label>
+                    <label><input type="checkbox" name="mode" value="remoto" class="peer sr-only"><span class="inline-flex h-11 cursor-pointer items-center rounded-full border border-stone-300 bg-white px-4
+                                       peer-checked:border-green-700 peer-checked:bg-green-700 peer-checked:text-white
+                                       peer-focus-visible:ring-2 peer-focus-visible:ring-offset-2">Remoto</span></label>
+                </fieldset>
+
+                <div class="hidden" aria-hidden="true">
+                    <label>Não preencha <input type="text" name="website" tabindex="-1" autocomplete="off"></label>
+                  </div>
+
+                  <label>
+                      <input type="checkbox" name="consent" value="yes" required>
+                       Concordo em receber e-mails com vagas e com a política de privacidade (LGPD).
+                  </label>
+
+                  <button type="submit">Quero receber minhas vagas</button>
+                  <p id="form-status" role="status" aria-live="polite"></p>
             </form>
         </section>
     </main>
