@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+@theme {
+  --color-cana: #2E6B3F;
+  --color-sol: #F4C542;
+  --color-creme: #FBF7EC;
+  --font-display: "Bricolage Grotesque", sans-serif;
+} /* bg-cana text-sol font-display */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ nav {
+    padding: 15px;
+    display: flex;
+    justify-content: space-around;
+    gap: 35%;
+}
+
+

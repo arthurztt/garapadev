@@ -1,0 +1,15 @@
+*.config.mjs
+.env
+.env.local
+*.pem
+*.key
+node_modules/
+dist/
+build/
+coverage/
+npm-debug.log*
+/vendor/
+*.exe
+*.test
+*.out
+*.json
