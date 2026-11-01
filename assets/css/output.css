@@ -12,9 +12,11 @@
     --color-stone-300: oklch(86.9% 0.005 56.366);
     --color-white: #fff;
     --spacing: 0.25rem;
+    --font-weight-semibold: 600;
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
     --color-creme: #FBF7EC;
+    --color-softgreen: #E3F0E3;
     --color-mudgreen: #1F4D2B;
     --font-display: "Bricolage Grotesque", sans-serif;
   }
@@ -210,6 +212,9 @@
   .bg-creme {
     background-color: var(--color-creme);
   }
+  .bg-softgreen {
+    background-color: var(--color-softgreen);
+  }
   .bg-white {
     background-color: var(--color-white);
   }
@@ -218,6 +223,10 @@
   }
   .font-display {
     font-family: var(--font-display);
+  }
+  .font-semibold {
+    --tw-font-weight: var(--font-weight-semibold);
+    font-weight: var(--font-weight-semibold);
   }
   .text-mudgreen {
     color: var(--color-mudgreen);
@@ -255,12 +264,25 @@ nav {
   padding: 15px;
   display: flex;
   justify-content: space-around;
-  gap: 35%;
+  gap: 60%;
+}
+p.about-topic {
+  display: flex;
+  align-items: center;
+  border-radius: 25px;
+  font-size: 13px;
+  width: 210px;
+  margin: 20px 20px 20px 6%;
+  padding: 10px 10px 10px 15px;
 }
 @property --tw-border-style {
   syntax: "*";
   inherits: false;
   initial-value: solid;
+}
+@property --tw-font-weight {
+  syntax: "*";
+  inherits: false;
 }
 @property --tw-shadow {
   syntax: "*";
@@ -331,6 +353,7 @@ nav {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
       --tw-border-style: solid;
+      --tw-font-weight: initial;
       --tw-shadow: 0 0 #0000;
       --tw-shadow-color: initial;
       --tw-shadow-alpha: 100%;
@@ -348,5 +371,3 @@ nav {
     }
   }
 }
-
-
