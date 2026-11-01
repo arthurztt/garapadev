@@ -4,6 +4,7 @@
   --color-cana: #2E6B3F;
   --color-sol: #F4C542;
   --color-creme: #FBF7EC;
+  --color-mudgreen: #1F4D2B;
   --font-display: "Bricolage Grotesque", sans-serif;
 } /* bg-cana text-sol font-display */
 
@@ -11,6 +12,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+header{
+    padding: 20px;
 }
 
  nav {
