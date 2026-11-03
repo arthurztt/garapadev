@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@source "../../pages";
 
 @theme {
   --color-cana: #2E6B3F;
@@ -7,32 +8,15 @@
   --color-softgreen: #E3F0E3;
   --color-mudgreen: #1F4D2B;
   --font-display: "Bricolage Grotesque", sans-serif;
-} /* bg-cana text-sol font-display */
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  --font-sans: "DM Sans", sans-serif;
 }
 
-header{
-    padding: 20px;
-}
-
- nav {
-    padding: 15px;
-    display: flex;
-    justify-content: space-around;
-    gap: 60%;
-}
-
-
-p.about-topic {
-    display: flex;
-    align-items: center;
-    border-radius: 25px;
-    font-size: 13px;
-    width: 210px;
-    margin: 20px 20px 20px 6%;
-    padding: 10px 10px 10px 15px;
+@layer components {
+  .label { @apply mt-5 mb-2 block text-sm font-bold; }
+  .field { @apply h-12 w-full rounded-lg border border-stone-300 bg-white px-3 text-base; }
+  .chip {
+    @apply inline-flex h-11 cursor-pointer items-center rounded-full border border-stone-300 bg-white px-4 text-sm text-stone-700
+           peer-checked:border-cana peer-checked:bg-cana peer-checked:text-white
+           peer-focus-visible:ring-2 peer-focus-visible:ring-cana peer-focus-visible:ring-offset-2;
+  }
 }

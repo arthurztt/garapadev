@@ -1,15 +1,15 @@
-*.config.mjs
-.env
-.env.local
-*.pem
-*.key
 node_modules/
 dist/
 build/
 coverage/
+.env
+.env.local
+*.pem
+*.key
 npm-debug.log*
 /vendor/
 *.exe
 *.test
 *.out
-*.json
+# CSS gerado pelo Tailwind (gerado no build)
+assets/css/output.css
