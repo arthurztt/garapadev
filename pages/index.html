@@ -52,14 +52,24 @@
         </fieldset>
 
         <fieldset id="skills" class="mt-5">
-          <legend class="mb-2 text-sm font-bold">Habilidades <span id="skills-count" class="font-normal text-stone-600">0 de 15</span></legend>
+          <legend class="mb-2 text-sm font-bold">Habilidades <span id="skills-count" class="font-normal text-stone-600">0 de 5</legend>
           <div class="flex flex-wrap gap-2">
+              <input type="text" id="skill-input" class="field h-10" required>
+              <div class="skills-typed field p-4 pt-2.5 pb-2.5 w-auto h-auto border-dotted">
+                  <label><input type="checkbox" name="skills" value="go" class="peer sr-only"><span class="chip">Go</span></label>
+                  <label><input type="checkbox" name="skills" value="postgresql" class="peer sr-only"><span class="chip">PostgreSQL</span></label>
+                  <label><input type="checkbox" name="skills" value="docker" class="peer sr-only"><span class="chip">Docker</span></label>
+                  <label><input type="checkbox" name="skills" value="git" class="peer sr-only"><span class="chip">Git</span></label>
+                  <label><input type="checkbox" name="skills" value="zabbix" class="peer sr-only"><span class="chip">Zabbix</span></label>
+              </div>
+
+                  <!-- 
           <label><input type="checkbox" name="skills" value="go" class="peer sr-only"><span class="chip">Go</span></label>
           <label><input type="checkbox" name="skills" value="postgresql" class="peer sr-only"><span class="chip">PostgreSQL</span></label>
           <label><input type="checkbox" name="skills" value="docker" class="peer sr-only"><span class="chip">Docker</span></label>
           <label><input type="checkbox" name="skills" value="git" class="peer sr-only"><span class="chip">Git</span></label>
           <label><input type="checkbox" name="skills" value="zabbix" class="peer sr-only"><span class="chip">Zabbix</span></label>
-          </div>
+          </div>  --> 
         </fieldset>
 
         <div class="grid gap-x-3 sm:grid-cols-2">
